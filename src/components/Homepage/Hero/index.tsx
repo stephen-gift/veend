@@ -6,7 +6,7 @@ import React from "react";
 const VHero = () => {
   return (
     <section
-      className="min-h-[calc(100vh-144px)] bg-[#040320] bg-[length:120%_auto] bg-center flex justify-center items-center "
+      className="min-h-[calc(100vh-144px)] bg-[#040320] bg-[length:120%_auto] bg-center justify-center items-center "
       style={{
         backgroundImage: "url('/heroGrid.png')"
       }}
@@ -36,6 +36,12 @@ const VHero = () => {
             <Image src={"/hero.png"} alt="hero" width={500} height={500} />
           </div>
         </div>
+      </div>
+      <div className="bg-[#334] flex justify-center items-center p-3 gap-3">
+        <div className="bg-[#FF3F3F] p-1 rounded-xl text-white ">New</div>
+        <p className="text-white">
+          Big news!!! VeendHQ is now backed by Techstars 🎉
+        </p>
       </div>
     </section>
   );
