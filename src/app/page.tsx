@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <div>
       <VHeader />
-      Veend | Home
       <VHomepageContainer />
       <VFooter />
     </div>
