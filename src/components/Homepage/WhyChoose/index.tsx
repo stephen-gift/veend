@@ -3,7 +3,7 @@ import React from "react";
 
 const VWhyChoose = () => {
   return (
-    <section className="p-4 md:p-10 ">
+    <section className="p-4 lg:p-30 md:p-20 ">
       <div className="bg-[#040320] rounded-4xl p-4 md:p-12 text-white flex flex-col justify-center items-center text-center gap-20">
         <div className="max-w-[600px] w-full flex flex-col gap-4">
           <h2 className="text-4xl font-semibold text-center">
