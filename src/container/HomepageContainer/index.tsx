@@ -15,7 +15,7 @@ const VHomepageContainer = () => {
     <main>
       <VHero />
       <VTestimonials />
-      <VPartners />
+      {/* <VPartners /> */}
       <VWhyChoose />
       <VFeatures />
       <VStarterGuide />
