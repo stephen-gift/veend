@@ -8,20 +8,20 @@ const VWhyChoose = () => {
     <motion.section
       initial={{
         backgroundColor: "transparent",
-        opacity: 0.5
+        opacity: 0
       }}
       whileInView={{
         backgroundColor: "#040320",
         opacity: 1
       }}
-      viewport={{ amount: 0.4 }}
+      viewport={{ amount: 0.2, once: false }}
       transition={{
         backgroundColor: { duration: 1, ease: "easeInOut" },
         opacity: { duration: 1, ease: "easeOut" }
       }}
       className="p-4 lg:p-30 md:p-20 py-30 "
     >
-      <div className="bg-[#040320] rounded-4xl p-4 md:p-12 text-white flex flex-col justify-center items-center text-center gap-20">
+      <div className=" overflow-hidden bg-[#040320] rounded-4xl p-4 md:p-12 text-white flex flex-col justify-center items-center text-center gap-20">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
