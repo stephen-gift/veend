@@ -30,8 +30,6 @@ const ContactCard = ({
         : "text-emerald-500 border-emerald-500 "
   };
 
-  const defaultIcon =
-    type === "call" ? <Phone size={24} /> : <Mail size={24} />;
   return (
     <div
       className={`flex flex-col justify-center items-start rounded-lg p-6 ${styles.background} ${className}`}

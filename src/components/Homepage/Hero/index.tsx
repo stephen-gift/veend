@@ -8,12 +8,12 @@ import { motion } from "motion/react";
 const VHero = () => {
   return (
     <section
-      className="mt-[156px] min-h-[calc(100vh-144px)] bg-[#040320] bg-[length:120%_auto] bg-center flex flex-col justify-center items-center"
+      className=" min-h-[calc(100vh-144px)] bg-[#040320] bg-[length:120%_auto] bg-center flex flex-col justify-center items-center"
       style={{
         backgroundImage: "url('/heroGrid.png')"
       }}
     >
-      <div className="flex flex-col items-center gap-8 justify-center h-full max-w-[1080px] mx-auto">
+      <div className=" mt-[200px] flex flex-col items-center gap-8 justify-center h-full max-w-[1200px] w-full mx-auto p-2">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ const VHero = () => {
               transition={{ duration: 0.5, delay: 1.1 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full flex justify-center items-center md:items-start"
+              className="w-full flex items-center md:items-start"
             >
               <Button className="w-fit rounded-[100px] bg-[#F9AB21] text-[#334]">
                 Get Started

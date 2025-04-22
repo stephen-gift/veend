@@ -3,7 +3,6 @@ import {
   VFeatures,
   VGetStarted,
   VHero,
-  VPartners,
   VStarterGuide,
   VTestimonials,
   VWhyChoose

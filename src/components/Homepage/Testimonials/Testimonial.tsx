@@ -1,7 +1,6 @@
 "use client";
-import { CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
-import TestimonialCard from "./TestimonialCard";
 import Image from "next/image";
 
 export interface Testimonial {
@@ -112,9 +111,9 @@ const Testimonial = ({
         >
           <div className="flex-1 flex flex-col gap-5 justify-center md:gap-10 w-full">
             <p className="w-full md:max-w-[515px] text-2xl text-center md:text-left text-[#040320]">
-              <sup>"</sup>
+              <sup>&quot;</sup>
               {testimonials[activeIndex].quote}
-              <sub>"</sub>
+              <sub>&quot;</sub>
             </p>
           </div>
 

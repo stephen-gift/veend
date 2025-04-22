@@ -76,10 +76,10 @@ const VFeatures = () => {
                 </h3>
 
                 <p className="text-[14px] md:text-2xl text-center md:text-left">
-                  Veend's Remita Payroll and IPPIS Loans for federal and state
-                  government workers in Nigeria, provides on-demand instant
-                  credit tailored for the unique needs of salary earners in
-                  Nigeria.
+                  Veend&apos;s Remita Payroll and IPPIS Loans for federal and
+                  state government workers in Nigeria, provides on-demand
+                  instant credit tailored for the unique needs of salary earners
+                  in Nigeria.
                 </p>
               </div>
             </div>
@@ -156,9 +156,10 @@ const VFeatures = () => {
                 </h3>
 
                 <p className="text-[14px] md:text-2xl text-center md:text-left">
-                  Power up your life with Veend's Solar Energy loan. Enjoy clean
-                  energy, comfort and productivity in your home and office space
-                  by securing instant loans for solar products and equipment.
+                  Power up your life with Veend&apos;s Solar Energy loan. Enjoy
+                  clean energy, comfort and productivity in your home and office
+                  space by securing instant loans for solar products and
+                  equipment.
                 </p>
               </div>
             </div>

@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tabs } from "@radix-ui/react-tabs";
 import Image from "next/image";
@@ -9,8 +8,6 @@ import DownloadButtons from "@/components/Global/Download/DownloadButtons";
 import AnimatedArrow from "./AnimatedArrow";
 
 const VStarterGuide = () => {
-  const [activeTab, setActiveTab] = React.useState("ussd");
-
   const ussdSteps = [
     {
       title: "Dial *347*780#",

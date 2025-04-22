@@ -50,11 +50,11 @@ const FooterLinks = () => {
   ];
   return (
     <div className="px-4 py-8">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {links.map((link, index) => (
           <Link
             key={index}
-            href="#"
+            href="/"
             className={cn(
               "text-sm md:text-xs lg:text-sm text-muted-foreground hover:text-primary transition-colors",
               "line-clamp-1"
