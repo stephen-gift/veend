@@ -49,7 +49,7 @@ const DownloadButtons = ({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "inline-flex items-center px-4 py-2 rounded-[100px]",
+        "inline-flex items-center p-2 md:p-3 rounded-[100px]",
         "transition-all duration-200",
         "hover:opacity-90 active:scale-95",
         selectedVariant.bg,
@@ -59,8 +59,8 @@ const DownloadButtons = ({
         className
       )}
     >
-      <div className="flex items-center">
-        <div className="flex-shrink-0 w-8 h-8 mr-3">
+      <div className="flex items-center gap-2">
+        <div className=" w-8 h-8">
           <Image
             src={icon}
             alt={`${bottomText} logo`}
@@ -70,8 +70,10 @@ const DownloadButtons = ({
           />
         </div>
         <div className="flex flex-col">
-          <span className="text-xs font-medium">{topText}</span>
-          <span className="text-lg font-bold leading-tight">{bottomText}</span>
+          <span className="text-[10px] md:text-xs font-medium">{topText}</span>
+          <span className="text-sm md:text-lg font-bold leading-tight">
+            {bottomText}
+          </span>
         </div>
       </div>
     </Link>
