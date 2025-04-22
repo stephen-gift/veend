@@ -30,9 +30,9 @@ const VHeader = () => {
     { label: "Login", href: "/" }
   ];
   return (
-    <header>
+    <header className="fixed w-full top-0 z-50 bg-white">
       <div className="flex justify-center lg:justify-between  item-center p-3">
-        <div className="hidden gap-4 justify-between lg:justify-start items-center w-full sm:flex">
+        <div className=" bg-white flex flex-wrap gap-4 justify-between lg:justify-start items-center w-full sm:flex">
           <div className="flex item-center">
             <Headset />
             Reach Us Via:

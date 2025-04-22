@@ -6,6 +6,7 @@ import Image from "next/image";
 import React from "react";
 import VerticalSteps from "./VerticalSteps";
 import DownloadButtons from "@/components/Global/Download/DownloadButtons";
+import AnimatedArrow from "./AnimatedArrow";
 
 const VStarterGuide = () => {
   const [activeTab, setActiveTab] = React.useState("ussd");
@@ -72,7 +73,7 @@ const VStarterGuide = () => {
     }
   ];
   return (
-    <section>
+    <section className="mt-20 mb-20">
       <div className="max-w-6xl w-full mx-auto">
         <div className="text-center mb-8 max-w-[630px] w-full mx-auto">
           <h3 className="text-2xl md:text-3xl font-semibold text-center mb-12">
@@ -106,11 +107,16 @@ const VStarterGuide = () => {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="ussd" className="w-full">
-            {/* USSD Content */}
+          <TabsContent value="ussd" className="w-full text-black">
             <div className=" flex flex-col md:flex-row w-full justify-between items-center gap-3 md:gap-8">
               <div className="flex-1 flex flex-col justify-center items-center w-full">
-                <VerticalSteps steps={ussdSteps} currentStep={5} />
+                <VerticalSteps
+                  steps={ussdSteps}
+                  currentStep={5}
+                  completedColor="green"
+                  activeColor="blue"
+                  pendingColor="gray"
+                />
               </div>
               <div className="flex-1 w-full">
                 <Image
@@ -125,7 +131,7 @@ const VStarterGuide = () => {
             </div>
 
             <div className="flex flex-col gap-4 justify-center items-center w-full">
-              <Image src={"arrow.svg"} alt="arrow" width={55} height={67} />
+              <AnimatedArrow />
               <div className="bg-[#F9AB21] p-4 rounded-[100px]">
                 Dial *347*780#
               </div>
@@ -151,7 +157,7 @@ const VStarterGuide = () => {
             </div>
 
             <div className="flex flex-col gap-4 justify-center items-center w-full">
-              <Image src={"arrow.svg"} alt="arrow" width={55} height={67} />
+              <AnimatedArrow />
 
               <div className="p-4 flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
                 <DownloadButtons
@@ -192,7 +198,8 @@ const VStarterGuide = () => {
             </div>
 
             <div className="flex flex-col gap-4 justify-center items-center w-full">
-              <Image src={"arrow.svg"} alt="arrow" width={55} height={67} />
+              <AnimatedArrow />
+
               <div className="bg-[#F9AB21] p-4 rounded-[100px]">
                 Get Started
               </div>

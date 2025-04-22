@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 const VHero = () => {
   return (
     <section
-      className="min-h-[calc(100vh-144px)] bg-[#040320] bg-[length:120%_auto] bg-center flex flex-col justify-center items-center"
+      className="mt-[156px] min-h-[calc(100vh-144px)] bg-[#040320] bg-[length:120%_auto] bg-center flex flex-col justify-center items-center"
       style={{
         backgroundImage: "url('/heroGrid.png')"
       }}

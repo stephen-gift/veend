@@ -3,7 +3,7 @@ import React from "react";
 
 const VGetStarted = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-8 w-full">
+    <section className="flex flex-col items-center justify-center gap-8 w-full mb-10">
       <div className="max-w-[494px] w-full mx-auto text-center">
         <h3 className="text-4xl font-bold">Ready to get instant loan?</h3>
         <p>

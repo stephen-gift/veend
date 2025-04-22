@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-
+import { motion } from "motion/react";
 interface Step {
   title: string;
   description: string;
@@ -46,16 +47,24 @@ const VerticalSteps = ({
             >
               {/* Step number */}
               <div
-                className={`flex-shrink-0 w-8 h-8 rounded-full font-bold flex items-center justify-center z-10 border-2 ${circleColor}`}
+                className={`flex-shrink-0 w-8 h-8 rounded-full font-bold flex items-center justify-center z-10 border-1 border-[#040320]`}
               >
                 {index + 1}
               </div>
 
               {/* Vertical line */}
               {!isLast && (
-                <div
-                  className={`absolute h-full w-0.5 ${lineColor} left-4 top-8 -ml-px`}
-                ></div>
+                <motion.div
+                  initial={{ height: 0 }}
+                  whileInView={{ height: "100%" }}
+                  transition={{
+                    duration: 0.8,
+                    ease: "easeInOut",
+                    delay: index * 0.8
+                  }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  className={`absolute h-[20px] w-0.5 bg-[#A0A0AA] left-4 top-8 -ml-px`}
+                ></motion.div>
               )}
 
               {/* Step content */}

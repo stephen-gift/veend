@@ -24,12 +24,13 @@ const VContact = () => {
     }
   ];
   return (
-    <section>
+    <section className="max-w-[1200px] w-full mx-auto mb-10">
       <div className="flex flex-col gap-6">
-        <div className="max-w-[1035px] text-center">
-          <h3 className="text-5xl font-bold text-center md:text-left">
-            Need any assistance? Our dedicated customer service team is
-            available around the clock to assist you.
+        <div className="max-w-[1000px] text-center">
+          <h3 className="text-[18px] md:text-5xl font-semibold text-[#334] text-center md:text-left">
+            Need any assistance?
+            <br /> Our dedicated customer service team is available around the
+            clock to assist you.
           </h3>
         </div>
         <div>
