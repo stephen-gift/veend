@@ -14,18 +14,18 @@ interface VerticalStepsProps {
   pendingColor?: string;
 }
 const VerticalSteps = ({
-  steps,
-  currentStep,
-  completedColor = "green",
-  activeColor = "blue",
-  pendingColor = "gray"
-}: VerticalStepsProps) => {
+  steps
+}: // currentStep
+// completedColor = "green",
+// activeColor = "blue",
+// pendingColor = "gray"
+VerticalStepsProps) => {
   return (
     <div className="w-full">
       <div className="flex flex-col w-full">
         {steps.map((step, index) => {
-          const isCompleted = index + 1 < currentStep;
-          const isActive = index + 1 === currentStep;
+          // const isCompleted = index + 1 < currentStep;
+          // const isActive = index + 1 === currentStep;
           const isLast = index === steps.length - 1;
 
           return (
