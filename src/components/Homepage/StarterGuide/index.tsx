@@ -5,6 +5,7 @@ import { Tabs } from "@radix-ui/react-tabs";
 import Image from "next/image";
 import React from "react";
 import VerticalSteps from "./VerticalSteps";
+import DownloadButtons from "@/components/Global/Download/DownloadButtons";
 
 const VStarterGuide = () => {
   const [activeTab, setActiveTab] = React.useState("ussd");
@@ -81,7 +82,7 @@ const VStarterGuide = () => {
         </div>
 
         <Tabs
-          defaultValue="account"
+          defaultValue="ussd"
           className="flex justify-center items-center flex-col w-full "
         >
           <TabsList className="mb-12 bg-[#FEF2DE] flex gap-10">
@@ -151,8 +152,23 @@ const VStarterGuide = () => {
 
             <div className="flex flex-col gap-4 justify-center items-center w-full">
               <Image src={"arrow.svg"} alt="arrow" width={55} height={67} />
-              <div className="bg-[#F9AB21] p-4 rounded-[100px]">
-                Dial *347*780#
+
+              <div className="p-4 flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+                <DownloadButtons
+                  icon="/playStore.png"
+                  topText="GET IT ON"
+                  bottomText="Google Play"
+                  href="/"
+                  variant="google"
+                />
+
+                <DownloadButtons
+                  icon="/apple.png"
+                  topText="Download on the"
+                  bottomText="Apple Store"
+                  href="/"
+                  variant="apple"
+                />
               </div>
             </div>
           </TabsContent>
