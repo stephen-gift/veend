@@ -33,7 +33,7 @@ const AnimatedArrow = () => {
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center ">
       <motion.svg
         width="38"
         height="79"

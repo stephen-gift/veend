@@ -70,7 +70,7 @@ const VStarterGuide = () => {
     }
   ];
   return (
-    <section className="mt-20 mb-20">
+    <section className="mt-20 mb-20 p-5">
       <div className="max-w-6xl w-full mx-auto">
         <div className="text-center mb-8 max-w-[630px] w-full mx-auto">
           <h3 className="text-2xl md:text-3xl font-semibold text-center mb-12">
@@ -156,7 +156,7 @@ const VStarterGuide = () => {
             <div className="flex flex-col gap-4 justify-center items-center w-full">
               <AnimatedArrow />
 
-              <div className="p-4 flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+              <div className="flex gap-4 justify-center items-center w-full">
                 <DownloadButtons
                   icon="/playStore.png"
                   topText="GET IT ON"

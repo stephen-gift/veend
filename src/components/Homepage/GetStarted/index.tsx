@@ -3,7 +3,7 @@ import React from "react";
 
 const VGetStarted = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-8 w-full mb-10">
+    <section className="flex flex-col items-center justify-center gap-8 w-full mb-10 max-[1200px] mx-auto">
       <div className="max-w-[494px] w-full mx-auto text-center">
         <h3 className="text-4xl font-bold">Ready to get instant loan?</h3>
         <p>
@@ -11,7 +11,7 @@ const VGetStarted = () => {
           get started today!
         </p>
       </div>
-      <div className="p-4 flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+      <div className="flex gap-4 justify-center items-center w-full">
         <DownloadButtons
           icon="/playStore.png"
           topText="GET IT ON"

@@ -5,8 +5,8 @@ import { motion } from "motion/react";
 
 const VFeatures = () => {
   return (
-    <section>
-      <div className="flex flex-col justify-center items-center gap-10 w-full">
+    <section className="mt-20 p-3">
+      <div className="flex flex-col justify-center items-center gap-10 w-full max-w-[1200px] mx-auto">
         <div className="max-w-[500px] w-full mx-auto text-center flex flex-col  justify-center items-center gap-4">
           <h3 className="text-[24px] md:text-2xl font-bold">
             Customized Loan Products just for you
@@ -17,7 +17,7 @@ const VFeatures = () => {
           </p>
         </div>
 
-        <div className="flex flex-col justify-center items-center md:gap-0 p-0 w-full gap-5 p-2 md:p-0">
+        <div className="flex flex-col justify-center items-center md:gap-0 w-full gap-5 p-2 md:p-0">
           <div className="flex flex-col md:flex-row justify-center items-center w-full ">
             <div className="flex-1 flex justify-center items-center flex-col text-left w-full ">
               <motion.div

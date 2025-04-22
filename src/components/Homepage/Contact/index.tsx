@@ -24,7 +24,7 @@ const VContact = () => {
     }
   ];
   return (
-    <section className="max-w-[1200px] w-full mx-auto mb-10">
+    <section className="max-w-[1200px] w-full mx-auto mb-10 p-5">
       <div className="flex flex-col gap-6">
         <div className="max-w-[1000px] text-center">
           <h3 className="text-[18px] md:text-5xl font-semibold text-[#334] text-center md:text-left">

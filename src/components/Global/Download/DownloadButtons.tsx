@@ -64,14 +64,16 @@ const DownloadButtons = ({
           <Image
             src={icon}
             alt={`${bottomText} logo`}
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             className="w-full h-full object-contain"
           />
         </div>
         <div className="flex flex-col">
-          <span className="text-[10px] md:text-xs font-medium">{topText}</span>
-          <span className="text-sm md:text-lg font-bold leading-tight">
+          <span className="text-[10px] md:text-[12px] font-medium">
+            {topText}
+          </span>
+          <span className="text-[12px] md:text-[14px] font-bold leading-tight">
             {bottomText}
           </span>
         </div>

@@ -101,7 +101,7 @@ const Testimonial = ({
 
   return (
     <div
-      className="relative w-full overflow-hidden"
+      className="relative w-full overflow-hidden max-w-[1200px] mx-auto"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -121,7 +121,7 @@ const Testimonial = ({
             <div
               className={`bg-white rounded-xl shadow-lg p-6 mb-8 relative w-full ${cardClassName}`}
             >
-              <div className="flex justify-between items-center relative gap-4 w-full max-w-[600px]">
+              <div className="flex justify-between items-center relative gap-4 w-full">
                 <span>
                   <Image
                     src={testimonials[activeIndex].image}

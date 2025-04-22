@@ -21,7 +21,7 @@ const VWhyChoose = () => {
       }}
       className="p-4 lg:p-30 md:p-20 py-30 "
     >
-      <div className=" overflow-hidden bg-[#040320] rounded-4xl p-4 md:p-12 text-white flex flex-col justify-center items-center text-center gap-20">
+      <div className=" w-full max-w-[1200px] mx-auto overflow-hidden bg-[#040320] rounded-4xl p-4 md:p-12 text-white flex flex-col justify-center items-center text-center gap-20">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}

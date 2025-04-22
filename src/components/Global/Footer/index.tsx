@@ -8,7 +8,7 @@ import FooterLinks from "./FooterLinks";
 const VFooter = () => {
   return (
     <footer className="bg-[#040320] text-white p-2 md:p-10 py-7">
-      <div className="flex flex-col w-full max-w-[1440px] mx-auto gap-4">
+      <div className="flex flex-col w-full gap-8">
         <div className="flex flex-col md:flex-row gap-4 justify-center items-start w-full">
           <div className="flex  flex-col h-full gap-3">
             <div className="flex items-center">
@@ -91,8 +91,8 @@ const VFooter = () => {
             <div className="flex flex-col md:flex-row justify-between gap-8 w-full">
               {/* Products Section */}
               <div className="space-y-4">
-                <h3 className="text-xl font-medium mb-4">Products</h3>
-                <div className="flex flex-col space-y-3">
+                <h3 className="text-xl font-medium mb-5">Products</h3>
+                <div className="flex flex-col space-y-4">
                   <Link href="/" className="hover:text-gray-300 transition">
                     Buy Now, Pay Later
                   </Link>
@@ -107,23 +107,21 @@ const VFooter = () => {
 
               {/* Middle Section - More Links/Useful Links */}
               <div className="space-y-4">
-                <h3 className="text-xl font-medium mb-4">More links</h3>
-                <nav className="flex flex-col space-y-3">
-                  <>
-                    <Link href="/" className="hover:text-gray-300 transition">
-                      For Employers
-                    </Link>
-                    <Link href="/" className="hover:text-gray-300 transition">
-                      For Businesses
-                    </Link>
-                  </>
+                <h3 className="text-xl font-medium mb-5">More links</h3>
+                <nav className="flex flex-col space-y-4">
+                  <Link href="/" className="hover:text-gray-300 transition">
+                    For Employers
+                  </Link>
+                  <Link href="/" className="hover:text-gray-300 transition">
+                    For Businesses
+                  </Link>
                 </nav>
               </div>
 
               {/* Legal Section */}
               <div className="space-y-4">
-                <h3 className="text-xl font-medium mb-4">Legal</h3>
-                <nav className="flex flex-col space-y-3">
+                <h3 className="text-xl font-medium mb-5">Legal</h3>
+                <nav className="flex flex-col space-y-4">
                   <Link href="/" className="hover:text-gray-300 transition">
                     Privacy Policy
                   </Link>
@@ -141,7 +139,7 @@ const VFooter = () => {
           </small>
         </div>
       </div>
-      <div className="border-t border-gray-700">
+      <div className="border-t border-gray-700 mt-10">
         <FooterLinks />
       </div>
     </footer>
