@@ -7,7 +7,7 @@ import FooterLinks from "./FooterLinks";
 
 const VFooter = () => {
   return (
-    <footer className="bg-[#040320] text-white p-2 md:p-10 py-7">
+    <footer className="bg-[#040320] text-white p-5 md:p-10 py-7">
       <div className="flex flex-col w-full gap-8">
         <div className="flex flex-col md:flex-row gap-4 justify-center items-start w-full">
           <div className="flex  flex-col h-full gap-3">

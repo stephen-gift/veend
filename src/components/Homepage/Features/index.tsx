@@ -18,13 +18,13 @@ const VFeatures = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center md:gap-0 w-full gap-5 p-2 md:p-0">
-          <div className="flex flex-col md:flex-row justify-center items-center w-full ">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-3 ">
             <div className="flex-1 flex justify-center items-center flex-col text-left w-full ">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: false, amount: 0.3 }}
                 className="flex flex-col  justify-center items-center gap-3 max-w-[450px] w-full mx-auto text-center md:text-left"
               >
                 <h3 className="text-lg md:text-4xl font-bold text-center md:text-left ">
@@ -68,9 +68,15 @@ const VFeatures = () => {
               </motion.div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row-reverse justify-center items-center w-full">
+          <div className="flex flex-col md:flex-row-reverse justify-center items-center w-full gap-3">
             <div className="flex-1 flex justify-center items-center flex-col text-left">
-              <div className="flex flex-col justify-center items-center gap-3 max-w-[450px] w-full mx-auto">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="flex flex-col justify-center items-center gap-3 max-w-[450px] w-full mx-auto"
+              >
                 <h3 className="text-lg md:text-4xl font-bold text-center md:text-left ">
                   Remita Payroll and IPPIS Loans
                 </h3>
@@ -81,7 +87,7 @@ const VFeatures = () => {
                   instant credit tailored for the unique needs of salary earners
                   in Nigeria.
                 </p>
-              </div>
+              </motion.div>
             </div>
             <div className="flex-1 relative w-full flex justify-center items-center">
               <Image
@@ -111,9 +117,15 @@ const VFeatures = () => {
               </motion.div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-3">
             <div className="flex-1 flex justify-center items-center flex-col text-left">
-              <div className="max-w-[450px] w-flex flex-col justify-center items-center gap-3 full mx-auto">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="max-w-[450px] w-flex flex-col justify-center items-center gap-3 full mx-auto"
+              >
                 <h3 className="text-lg md:text-4xl font-bold text-center md:text-left ">
                   Buy Now, Pay Later
                 </h3>
@@ -123,7 +135,7 @@ const VFeatures = () => {
                   Later loan options, allowing you to enjoy your purchases and
                   manage repayment confidently.
                 </p>
-              </div>
+              </motion.div>
             </div>
             <div className="flex-1 relative w-full flex justify-center items-center">
               <Image
@@ -148,9 +160,15 @@ const VFeatures = () => {
               </motion.div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row-reverse justify-center items-center w-full">
+          <div className="flex flex-col md:flex-row-reverse justify-center items-center w-full gap-3">
             <div className="flex-1 flex justify-center items-center flex-col text-left">
-              <div className="max-w-[450px] flex flex-col justify-center items-center gap-3 full mx-auto">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="max-w-[450px] flex flex-col justify-center items-center gap-3 full mx-auto"
+              >
                 <h3 className="text-lg md:text-4xl font-bold text-center md:text-left ">
                   Solar Energy Finance
                 </h3>
@@ -161,7 +179,7 @@ const VFeatures = () => {
                   space by securing instant loans for solar products and
                   equipment.
                 </p>
-              </div>
+              </motion.div>
             </div>
             <div className="flex-1 relative w-full flex justify-center items-center">
               <Image
@@ -189,9 +207,15 @@ const VFeatures = () => {
               </motion.div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-3">
             <div className="flex-1 flex justify-center items-center flex-col text-left">
-              <div className="flex flex-col justify-center items-center gap-3 max-w-[450px] w-full mx-auto">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="flex flex-col justify-center items-center gap-3 max-w-[450px] w-full mx-auto"
+              >
                 <h3 className="text-lg md:text-4xl font-bold text-center md:text-left ">
                   Salary Backed Venture Loans for Civil Servant
                 </h3>
@@ -202,7 +226,7 @@ const VFeatures = () => {
                   enterprising government workers in Nigeria to kick start their
                   entrepreneurial journey.
                 </p>
-              </div>
+              </motion.div>
             </div>
             <div className="flex-1 relative w-full flex justify-center items-center">
               <Image

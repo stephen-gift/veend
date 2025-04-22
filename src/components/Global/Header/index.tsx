@@ -102,34 +102,59 @@ const VHeader = () => {
 
       {/* Mobile Menu - Now positioned relative to viewport, not within header */}
       {mobileMenuOpen && (
-        <div className="fixed top-[104px] left-0 right-0 lg:hidden bg-[#0A0921] text-white px-6 py-4 space-y-3 z-40 max-h-[calc(100vh-104px)] overflow-y-auto">
-          <div className="space-y-2">
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="products">
-                <AccordionTrigger className="text-white">
-                  Products
-                </AccordionTrigger>
-                <AccordionContent className="pl-4 space-y-2">
-                  <Link href="#" className="block hover:underline">
-                    Product 1
-                  </Link>
-                  <Link href="#" className="block hover:underline">
-                    Product 2
-                  </Link>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+        <div className="fixed top-0 h-full left-0 right-0 bg-[#0A0921] text-white z-50 overflow-y-auto">
+          <div className="p-5 flex justify-between items-center bg-[#040320]">
+            <div>
+              <Image
+                src="/logoText.svg"
+                alt="veend logo"
+                width={100}
+                height={50}
+              />
+            </div>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-white"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <X />
+            </Button>
+          </div>
 
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="block hover:underline py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="px-6 py-4 space-y-3">
+            <div className="space-y-2">
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="products">
+                  <AccordionTrigger className="text-white">
+                    Products
+                  </AccordionTrigger>
+                  <AccordionContent className="pl-4 space-y-2">
+                    <Link href="#" className="block hover:underline py-2">
+                      Product 1
+                    </Link>
+                    <Link href="#" className="block hover:underline py-2">
+                      Product 2
+                    </Link>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+
+              {navLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="block hover:underline py-3"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+
+              <div className="pt-4">
+                <Button className="w-full">Check Loan Eligibility</Button>
+              </div>
+            </div>
           </div>
         </div>
       )}
