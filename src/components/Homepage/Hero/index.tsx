@@ -85,12 +85,12 @@ const VHero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.5 }}
-        className="w-full bg-[#334] flex justify-center items-center p-3 gap-3"
+        className="w-full bg-[#334] flex justify-center items-center p-1 md:p-3 gap-1 md:gap-3 text-[10px]"
       >
         <motion.div
           animate={{ scale: [1, 1.1, 1] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="bg-[#FF3F3F] p-1 rounded-xl text-white"
+          className="bg-[#FF3F3F] p-1 rounded-[100px] text-white"
         >
           New
         </motion.div>
