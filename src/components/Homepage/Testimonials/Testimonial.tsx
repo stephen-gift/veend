@@ -82,7 +82,7 @@ const Testimonial = ({
         clearInterval(intervalRef.current);
       }
     };
-  }, [autoScroll, autoScrollInterval, testimonials.length, goToNextSlide]);
+  }, [autoScroll, autoScrollInterval, testimonials.length]);
 
   // Pause auto-scroll on hover
   const handleMouseEnter = () => {
