@@ -1,4 +1,4 @@
-import { motion, Variants } from "motion/react";
+import { motion } from "motion/react";
 
 const AnimatedArrow = () => {
   return (
