@@ -65,7 +65,7 @@ const VTestimonials = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
         >
-          <Testimonial autoScroll autoScrollInterval={3000} direction="row" />
+          <Testimonial autoScroll autoScrollInterval={5000} direction="row" />
         </motion.div>
 
         <motion.div
@@ -76,7 +76,7 @@ const VTestimonials = () => {
           <Testimonial
             testimonials={defaultTestimonials2}
             autoScroll
-            autoScrollInterval={3000}
+            autoScrollInterval={8000}
             direction="row-reverse"
           />
         </motion.div>
