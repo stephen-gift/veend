@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import Testimonial, { Testimonial as TestimonialType } from "./Testimonial";
 import { motion } from "motion/react";
+import AnimatedCircle from "./AnimatedCircle";
 
 const VTestimonials = () => {
   const defaultTestimonials2: TestimonialType[] = [
@@ -32,27 +32,24 @@ const VTestimonials = () => {
     }
   ];
   return (
-    <section className="p-10 md:p-20">
+    <section className="p-5 md:p-20">
       <motion.div
         className="flex items-center justify-center mt-15 mb-20"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <h2 className="relative max-w-[600px] text-2xl md:text-5xl text-center">
-          We are fast, convenient and reliable
+        <h2 className="relative text-3xl md:text-5xl font-bold text-center mx-auto max-w-[600px] py-6">
+          <span className="relative z-10">
+            We are fast, convenient and reliable
+          </span>
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
+            className="absolute inset-0 -top-1/4 -bottom-1/4 flex items-center justify-center"
           >
-            <Image
-              src={"/testimonialCircle.png"}
-              alt="hero"
-              height={300}
-              width={500}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1"
-            />
+            <AnimatedCircle />
           </motion.div>
         </h2>
       </motion.div>

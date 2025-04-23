@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"]
+const clashDisplay = localFont({
+  src: "./fonts/ClashDisplay-Regular.woff",
+  variable: "--font-clash-display"
 });
 
 export const metadata: Metadata = {
   title: "Veend | Instant Credit for Everyone",
   description:
-    "Veend is a platform that offers instant loans to anyone in Nigeria."
+    "Veend is a platform that offers instant loans to anyone in Nigeria.",
+  keywords: "veend, loans, instant loans, nigeria, credit, online loans"
 };
 
 export default function RootLayout({
@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.variable} antialiased`}>{children}</body>
+      <body className={`${clashDisplay.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
