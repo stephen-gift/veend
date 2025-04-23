@@ -72,12 +72,12 @@ const Testimonial = ({
     setActiveIndex(nextIndex);
   };
 
-  const goToPrevSlide = () => {
-    const prevIndex =
-      activeIndex === 0 ? testimonials.length - 1 : activeIndex - 1;
-    setDirections(-1);
-    setActiveIndex(prevIndex);
-  };
+  // const goToPrevSlide = () => {
+  //   const prevIndex =
+  //     activeIndex === 0 ? testimonials.length - 1 : activeIndex - 1;
+  //   setDirections(-1);
+  //   setActiveIndex(prevIndex);
+  // };
 
   useEffect(() => {
     if (autoScroll) {
