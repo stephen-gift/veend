@@ -14,12 +14,12 @@ const VHero = () => {
           backgroundImage: "url('/heroGrid.png')"
         }}
       >
-        <div className=" mt-[100px] flex flex-col items-center gap-8 justify-center h-full max-w-[1200px] w-full mx-auto p-5">
+        <div className=" mt-[150px] flex flex-col items-center gap-8 justify-center h-full max-w-[1200px] w-full mx-auto p-5">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="rounded-[100px] flex items-center justify-center gap-2 p-1 bg-[#f4c16133] text-[10px]"
+            className="rounded-[100px] flex items-center text-center justify-center gap-2 p-1 bg-[#f4c16133] text-[10px]"
           >
             <div className="rounded-[100px] bg-[#F9AB21] font-bold p-1">
               New Feature

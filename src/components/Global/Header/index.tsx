@@ -17,6 +17,7 @@ import {
   AccordionItem,
   AccordionTrigger
 } from "@/components/ui/accordion";
+import { motion } from "motion/react";
 
 const VHeader = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -33,18 +34,110 @@ const VHeader = () => {
     <>
       <header className="fixed w-full top-0 z-50 bg-white">
         <div className="flex justify-center lg:justify-between item-center px-5 py-2 max-w-[1200px] mx-auto w-full">
-          <div className="flex flex-wrap gap-4 justify-between lg:justify-start items-center w-full sm:flex">
-            <div className="flex item-center">
-              <Headset />
-              Reach Us Via:
-            </div>
-            <div className="flex item-center">
-              <Phone /> +2348013306078
-            </div>
-            <div className="flex item-center">
-              <MailIcon /> support@veendhq.com
-            </div>
-          </div>
+          <motion.div
+            className="flex flex-wrap gap-4 justify-between lg:justify-start items-center w-full sm:flex"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ staggerChildren: 0.2, delayChildren: 0.1 }}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            <motion.div
+              className="flex items-center gap-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 15,
+                delay: 0.1
+              }}
+              viewport={{ once: true }}
+            >
+              <motion.span
+                className="text-primary"
+                initial={{ scale: 0, rotate: -10 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  delay: 0.1
+                }}
+                viewport={{ once: true }}
+              >
+                <Headset size={20} />
+              </motion.span>
+              <span>Reach Us Via:</span>
+            </motion.div>
+
+            <motion.div
+              className="flex items-center gap-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 15,
+                delay: 0.3
+              }}
+              viewport={{ once: true }}
+            >
+              <motion.span
+                className="text-primary"
+                initial={{ scale: 0, rotate: -10 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  delay: 0.3
+                }}
+                viewport={{ once: true }}
+              >
+                <Phone size={20} />
+              </motion.span>
+              <Link
+                href="tel:+2348013306078"
+                className="hover:text-primary transition-colors"
+              >
+                +2348013306078
+              </Link>
+            </motion.div>
+
+            <motion.div
+              className="flex items-center gap-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 15,
+                delay: 0.5
+              }}
+              viewport={{ once: true }}
+            >
+              <motion.span
+                className="text-primary"
+                initial={{ scale: 0, rotate: -10 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20,
+                  delay: 0.5
+                }}
+                viewport={{ once: true }}
+              >
+                <MailIcon size={20} />
+              </motion.span>
+              <Link
+                href="mailto:support@veendhq.com"
+                className="hover:text-primary transition-colors"
+              >
+                support@veendhq.com
+              </Link>
+            </motion.div>
+          </motion.div>
           <div className="hidden lg:flex gap-x-4">
             <Button>Check Loan Eligibility</Button>
           </div>
